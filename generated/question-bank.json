@@ -1,0 +1,392 @@
+{
+  "concepts": [
+    {
+      "id": "chem-electrochem-nernst",
+      "subject": "Chemistry",
+      "unit": "Physical Chemistry",
+      "chapter": "Electrochemistry",
+      "microTopic": "Nernst equation numericals",
+      "prerequisites": [
+        "Redox reaction balancing",
+        "Logarithms in chemistry"
+      ],
+      "neetWeight": "High",
+      "difficultyLevel": "Medium",
+      "commonErrorPatterns": [
+        "Concept gap",
+        "Formula slip"
+      ]
+    },
+    {
+      "id": "bio-circulation-cardiac-output",
+      "subject": "Biology",
+      "unit": "Human Physiology",
+      "chapter": "Human Physiology",
+      "microTopic": "Cardiac output regulation",
+      "prerequisites": [
+        "Heart anatomy",
+        "Stroke volume basics"
+      ],
+      "neetWeight": "High",
+      "difficultyLevel": "Easy",
+      "commonErrorPatterns": [
+        "Concept gap",
+        "Formula slip"
+      ]
+    },
+    {
+      "id": "phy-optics-lens-sign",
+      "subject": "Physics",
+      "unit": "Optics",
+      "chapter": "Ray Optics",
+      "microTopic": "Lens sign convention",
+      "prerequisites": [
+        "Cartesian axis convention",
+        "Lens formula"
+      ],
+      "neetWeight": "Medium",
+      "difficultyLevel": "Hard",
+      "commonErrorPatterns": [
+        "Reading mistake",
+        "Guessing"
+      ]
+    },
+    {
+      "id": "bio-plant-hormones",
+      "subject": "Biology",
+      "unit": "Plant Physiology",
+      "chapter": "Plant Growth and Development",
+      "microTopic": "Plant hormone interactions",
+      "prerequisites": [
+        "Auxin functions",
+        "Cytokinin basics"
+      ],
+      "neetWeight": "Medium",
+      "difficultyLevel": "Medium",
+      "commonErrorPatterns": [
+        "Guessing",
+        "Concept gap"
+      ]
+    }
+  ],
+  "errorTags": [
+    {
+      "id": "concept-gap",
+      "label": "Concept gap",
+      "description": "The learner lacks the governing idea, not just the final step."
+    },
+    {
+      "id": "formula-slip",
+      "label": "Formula slip",
+      "description": "The learner knows the concept but misapplies or misremembers the relation."
+    },
+    {
+      "id": "reading-mistake",
+      "label": "Reading mistake",
+      "description": "The learner misses a keyword or sign convention from the prompt."
+    },
+    {
+      "id": "guessing",
+      "label": "Guessing",
+      "description": "The learner selects under uncertainty without solid elimination or recall."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-chem-nernst-01",
+      "subject": "Chemistry",
+      "chapter": "Electrochemistry",
+      "microTopicIds": [
+        "chem-electrochem-nernst"
+      ],
+      "primaryConceptId": "chem-electrochem-nernst",
+      "secondaryConceptIds": [],
+      "questionType": "Numerical concept",
+      "skillType": "Conceptual inference",
+      "trapType": "Formula substitution trap",
+      "difficulty": "Medium",
+      "estimatedTimeSec": 180,
+      "sourceType": "Internal authored",
+      "sourceLabel": "Neuroprep foundation set",
+      "prompt": "For a cell reaction involving 2 electrons, what happens to cell potential when reaction quotient increases at constant temperature?",
+      "options": [
+        "It always increases linearly",
+        "It decreases according to the Nernst correction term",
+        "It remains unchanged",
+        "It becomes zero immediately"
+      ],
+      "correctOption": 1,
+      "explanation": "Higher reaction quotient lowers cell potential because the logarithmic correction term subtracts from the standard potential.",
+      "repairNote": "Revise how reaction quotient changes the sign and direction of the Nernst correction before attempting the next numerical.",
+      "wrongReasonTag": "Concept gap",
+      "retryStatus": "Wrong yesterday",
+      "relationships": [
+        {
+          "type": "retry",
+          "targetQuestionId": "q-chem-nernst-02"
+        },
+        {
+          "type": "step-down",
+          "targetQuestionId": "q-bio-cardiac-01"
+        }
+      ],
+      "status": "ready"
+    },
+    {
+      "id": "q-bio-cardiac-01",
+      "subject": "Biology",
+      "chapter": "Human Physiology",
+      "microTopicIds": [
+        "bio-circulation-cardiac-output"
+      ],
+      "primaryConceptId": "bio-circulation-cardiac-output",
+      "secondaryConceptIds": [],
+      "questionType": "Concept check",
+      "skillType": "Recall",
+      "trapType": "Definition confusion",
+      "difficulty": "Easy",
+      "estimatedTimeSec": 120,
+      "sourceType": "Internal authored",
+      "sourceLabel": "Neuroprep foundation set",
+      "prompt": "Cardiac output is equal to:",
+      "options": [
+        "Heart rate x stroke volume",
+        "Blood pressure x pulse pressure",
+        "Heart rate / stroke volume",
+        "Venous return - stroke volume"
+      ],
+      "correctOption": 0,
+      "explanation": "Cardiac output measures blood pumped per minute and is the product of heart rate and stroke volume.",
+      "repairNote": "Write the core relation from memory once, then solve two direct application questions before mixing in regulation cases.",
+      "wrongReasonTag": "Formula slip",
+      "retryStatus": "Needs second pass",
+      "relationships": [
+        {
+          "type": "step-up",
+          "targetQuestionId": "q-bio-cardiac-02"
+        },
+        {
+          "type": "repair",
+          "targetQuestionId": "q-bio-cardiac-02"
+        }
+      ],
+      "status": "ready"
+    },
+    {
+      "id": "q-phy-lens-01",
+      "subject": "Physics",
+      "chapter": "Ray Optics",
+      "microTopicIds": [
+        "phy-optics-lens-sign"
+      ],
+      "primaryConceptId": "phy-optics-lens-sign",
+      "secondaryConceptIds": [],
+      "questionType": "Numerical",
+      "skillType": "Formula application",
+      "trapType": "Sign convention trap",
+      "difficulty": "Hard",
+      "estimatedTimeSec": 240,
+      "sourceType": "Exam-pattern reconstruction",
+      "sourceLabel": "Rebuilt from common NEET optics pattern",
+      "prompt": "In the Cartesian sign convention for lenses, a virtual object placed on the image side has object distance:",
+      "options": [
+        "Negative",
+        "Positive",
+        "Zero",
+        "Equal to focal length"
+      ],
+      "correctOption": 1,
+      "explanation": "A virtual object lies on the image side, so object distance is taken positive in the Cartesian sign convention.",
+      "repairNote": "Mark object side and image side explicitly before substituting signs into the lens formula.",
+      "wrongReasonTag": "Reading mistake",
+      "retryStatus": "Ready for timed check",
+      "relationships": [
+        {
+          "type": "retry",
+          "targetQuestionId": "q-phy-lens-02"
+        }
+      ],
+      "status": "ready"
+    },
+    {
+      "id": "q-bio-hormone-01",
+      "subject": "Biology",
+      "chapter": "Plant Growth and Development",
+      "microTopicIds": [
+        "bio-plant-hormones"
+      ],
+      "primaryConceptId": "bio-plant-hormones",
+      "secondaryConceptIds": [],
+      "questionType": "Single correct",
+      "skillType": "Elimination",
+      "trapType": "Guessing pressure",
+      "difficulty": "Medium",
+      "estimatedTimeSec": 120,
+      "sourceType": "AI-assisted draft",
+      "sourceLabel": "Drafted with AI, reviewed manually",
+      "prompt": "Removal of the shoot apex most directly reduces the effect of which hormone in apical dominance?",
+      "options": [
+        "Gibberellin",
+        "Cytokinin",
+        "Auxin",
+        "Ethylene"
+      ],
+      "correctOption": 2,
+      "explanation": "Auxin produced in the shoot apex suppresses lateral bud growth and is the key hormonal driver of apical dominance.",
+      "repairNote": "Rebuild the hormone map with one line for auxin, cytokinin, gibberellin, and ethylene before retrying.",
+      "wrongReasonTag": "Guessing",
+      "retryStatus": "Wrong yesterday",
+      "relationships": [
+        {
+          "type": "retry",
+          "targetQuestionId": "q-bio-hormone-02"
+        }
+      ],
+      "status": "ready"
+    },
+    {
+      "id": "q-chem-nernst-02",
+      "subject": "Chemistry",
+      "chapter": "Electrochemistry",
+      "microTopicIds": [
+        "chem-electrochem-nernst"
+      ],
+      "primaryConceptId": "chem-electrochem-nernst",
+      "secondaryConceptIds": [],
+      "questionType": "Retry variant",
+      "skillType": "Formula application",
+      "trapType": "Formula substitution trap",
+      "difficulty": "Easy",
+      "estimatedTimeSec": 150,
+      "sourceType": "Internal authored",
+      "sourceLabel": "Neuroprep repair variant",
+      "prompt": "At constant temperature, a reaction quotient below 1 will make the Nernst correction move the cell potential in which direction?",
+      "options": [
+        "Downward",
+        "Upward",
+        "No change",
+        "It depends only on electrode mass"
+      ],
+      "correctOption": 1,
+      "explanation": "When reaction quotient is below 1, the logarithmic term is negative, so subtracting it increases the cell potential.",
+      "repairNote": "Practice the sign of log Q before returning to full substitution questions.",
+      "wrongReasonTag": "Formula slip",
+      "retryStatus": "Needs second pass",
+      "relationships": [
+        {
+          "type": "similar",
+          "targetQuestionId": "q-chem-nernst-01"
+        }
+      ],
+      "status": "ready"
+    },
+    {
+      "id": "q-bio-cardiac-02",
+      "subject": "Biology",
+      "chapter": "Human Physiology",
+      "microTopicIds": [
+        "bio-circulation-cardiac-output"
+      ],
+      "primaryConceptId": "bio-circulation-cardiac-output",
+      "secondaryConceptIds": [],
+      "questionType": "Application check",
+      "skillType": "Conceptual inference",
+      "trapType": "Definition confusion",
+      "difficulty": "Medium",
+      "estimatedTimeSec": 150,
+      "sourceType": "Internal authored",
+      "sourceLabel": "Neuroprep repair variant",
+      "prompt": "If heart rate rises but stroke volume falls enough to keep the product unchanged, what happens to cardiac output?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It stays unchanged",
+        "It becomes zero"
+      ],
+      "correctOption": 2,
+      "explanation": "Cardiac output depends on the product of heart rate and stroke volume, so equal and opposite changes can keep it constant.",
+      "repairNote": "Convert word statements into the product relation before choosing an answer.",
+      "wrongReasonTag": "Concept gap",
+      "retryStatus": "Ready for timed check",
+      "relationships": [
+        {
+          "type": "step-down",
+          "targetQuestionId": "q-bio-cardiac-01"
+        }
+      ],
+      "status": "ready"
+    },
+    {
+      "id": "q-phy-lens-02",
+      "subject": "Physics",
+      "chapter": "Ray Optics",
+      "microTopicIds": [
+        "phy-optics-lens-sign"
+      ],
+      "primaryConceptId": "phy-optics-lens-sign",
+      "secondaryConceptIds": [],
+      "questionType": "Retry variant",
+      "skillType": "Formula application",
+      "trapType": "Sign convention trap",
+      "difficulty": "Medium",
+      "estimatedTimeSec": 180,
+      "sourceType": "Exam-pattern reconstruction",
+      "sourceLabel": "Rebuilt from common NEET optics pattern",
+      "prompt": "Before using the lens formula, which sign should be assigned to a virtual object located on the image side of a lens?",
+      "options": [
+        "Negative object distance",
+        "Positive object distance",
+        "Negative focal length",
+        "Zero object distance"
+      ],
+      "correctOption": 1,
+      "explanation": "A virtual object on the image side is assigned a positive object distance in the Cartesian sign convention.",
+      "repairNote": "Write the side of the object first, then assign the sign before opening the formula.",
+      "wrongReasonTag": "Reading mistake",
+      "retryStatus": "Needs second pass",
+      "relationships": [
+        {
+          "type": "similar",
+          "targetQuestionId": "q-phy-lens-01"
+        }
+      ],
+      "status": "ready"
+    },
+    {
+      "id": "q-bio-hormone-02",
+      "subject": "Biology",
+      "chapter": "Plant Growth and Development",
+      "microTopicIds": [
+        "bio-plant-hormones"
+      ],
+      "primaryConceptId": "bio-plant-hormones",
+      "secondaryConceptIds": [],
+      "questionType": "Retry variant",
+      "skillType": "Recall",
+      "trapType": "Guessing pressure",
+      "difficulty": "Easy",
+      "estimatedTimeSec": 90,
+      "sourceType": "AI-assisted draft",
+      "sourceLabel": "Drafted with AI, reviewed manually",
+      "prompt": "The suppression of lateral buds in apical dominance is most directly linked with which hormone produced near the shoot tip?",
+      "options": [
+        "Auxin",
+        "Abscisic acid",
+        "Ethylene",
+        "Cytokinin"
+      ],
+      "correctOption": 0,
+      "explanation": "Auxin produced near the shoot apex suppresses lateral bud growth and is central to apical dominance.",
+      "repairNote": "Anchor one hormone to one signature effect before attempting mixed hormone sets.",
+      "wrongReasonTag": "Guessing",
+      "retryStatus": "Needs second pass",
+      "relationships": [
+        {
+          "type": "similar",
+          "targetQuestionId": "q-bio-hormone-01"
+        }
+      ],
+      "status": "ready"
+    }
+  ]
+}
