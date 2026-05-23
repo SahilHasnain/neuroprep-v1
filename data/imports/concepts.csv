@@ -1,0 +1,5 @@
+id,subject,unit,chapter,microTopic,prerequisites,neetWeight,difficultyLevel,commonErrorPatterns
+chem-electrochem-nernst,Chemistry,Physical Chemistry,Electrochemistry,Nernst equation numericals,"Redox reaction balancing|Logarithms in chemistry",High,Medium,"Concept gap|Formula slip"
+bio-circulation-cardiac-output,Biology,Human Physiology,Human Physiology,Cardiac output regulation,"Heart anatomy|Stroke volume basics",High,Easy,"Concept gap|Formula slip"
+phy-optics-lens-sign,Physics,Optics,Ray Optics,Lens sign convention,"Cartesian axis convention|Lens formula",Medium,Hard,"Reading mistake|Guessing"
+bio-plant-hormones,Biology,Plant Physiology,Plant Growth and Development,Plant hormone interactions,"Auxin functions|Cytokinin basics",Medium,Medium,"Guessing|Concept gap"
